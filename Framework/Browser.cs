@@ -10,7 +10,9 @@ namespace Framework
 {
     public static class Browser
     {   
-        //
+        /// <summary>
+        /// 
+        /// </summary>
         public static string currentDate = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
         private static IWebDriver driver = new FirefoxDriver();
         //private static IWebDriver driver = new ChromeDriver();
