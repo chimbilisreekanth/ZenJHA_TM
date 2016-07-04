@@ -25,6 +25,7 @@ namespace Framework
 
         public static void Goto_BO(string url)
         {
+            //Goto URL
             driver.Navigate().GoToUrl(_BOUrl + url);
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(50));
