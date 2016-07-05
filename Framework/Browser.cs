@@ -12,9 +12,8 @@ namespace Framework
     {
         public static string Excel_Path = @"C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framework-master\Framework\ExcelSheets\Sree.xlsx";
         public static string currentDate = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
-        //private static IWebDriver driver;
+        
         private static IWebDriver driver = GetDriver();
-        //private static IWebDriver driver = new ChromeDriver();
         private static string _BOUrl = "https://treasury-backoffice-e.qa.netteller.com";
         private static string _channelUrl = "https://treasury-channel-e.qa.netteller.com:8080";
        
