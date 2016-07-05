@@ -8,11 +8,14 @@ namespace Tests
 {
     [TestClass]
     public class CH_AutomationTesting : TestBase{
+        
         string currentDate = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
         //[TestMethod, Priority(1), TestCategory("Smoke")]
          [TestMethod, Priority(1)]
           public void CH_Login()
           {
+              
+
               AllPages.CH_LoginPage.Goto();
               AllPages.CH_LoginPage.CH_Login();
               AllPages.RSAPage.RSA_Login();

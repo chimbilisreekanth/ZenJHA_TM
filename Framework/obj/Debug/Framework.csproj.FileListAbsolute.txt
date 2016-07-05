@@ -16,4 +16,7 @@ C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framew
 C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framework-master\Framework\bin\Debug\WebDriver.Support.xml
 C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framework-master\Framework\obj\Debug\Framework.exe
 C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framework-master\Framework\obj\Debug\Framework.pdb
+C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framework-master\Framework\bin\Debug\Excel.dll
+C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framework-master\Framework\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framework-master\Framework\bin\Debug\Excel.pdb
 C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framework-master\Framework\obj\Debug\Framework.csprojResolveAssemblyReference.cache

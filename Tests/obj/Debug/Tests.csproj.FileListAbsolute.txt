@@ -10,3 +10,6 @@ C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framew
 C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framework-master\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
 C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framework-master\Tests\obj\Debug\Tests.dll
 C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framework-master\Tests\obj\Debug\Tests.pdb
+C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framework-master\Tests\bin\Debug\Excel.dll
+C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framework-master\Tests\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framework-master\Tests\bin\Debug\Excel.pdb

@@ -52,11 +52,12 @@ namespace Framework.Pages
             TransferTo_Select.Click();
             Thread.Sleep(10000);
 
-            Browser.EnterDataOnTextbox(Amount, "1.15");
-            /*Amount.Clear();
-            Amount.Click();
-            Amount.SendKeys("1.15");
-            Thread.Sleep(10000);*/
+            //Amount data entering
+            //Browser.EnterDataOnTextbox(Amount, "2");
+            Amount.Clear();
+            //Amount.Click();
+            Amount.SendKeys("2");
+            Thread.Sleep(10000);
 
             Note.Clear();
             Note.SendKeys("sreekanth Test");

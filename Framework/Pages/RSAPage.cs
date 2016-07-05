@@ -11,6 +11,7 @@ namespace Framework.BO_Pages
 {
     public class RSAPage
     {
+        //RSA -- Sreekanth
         [FindsBy(How = How.XPath, Using = "html/body/div[5]/div/div/div/div[3]/button")]
         public IWebElement oopsError1;
         [FindsBy(How = How.XPath, Using = "html/body/div[4]/div/div/div/div[3]/button")]

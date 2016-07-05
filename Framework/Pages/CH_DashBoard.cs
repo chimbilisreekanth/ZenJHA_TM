@@ -25,7 +25,8 @@ namespace Framework.Pages
         public IWebElement Subtab_Transfer;
         // .//*[@id='navbar-collapse-1']/ul/li[3]/ul/li[1]/a
         //[FindsBy(How = How.LinkText, Using = "Create Transfer")]
-        [FindsBy(How = How.XPath, Using = "//a[contains(.,'Create Transfer')]")]
+        [FindsBy(How = How.XPath, Using = "//*[@class='ng-binding ng-scope ng-isolate-scope'][text()='Create Transfer']")]
+        //[FindsBy(How = How.XPath, Using = "//li/ul/li[3]/a")]
         public IWebElement CreateTransfer;
 
         [FindsBy(How = How.XPath, Using = ".//*[@id='navbar-collapse-1']/ul/li[2]/ul/li[2]/a")]
