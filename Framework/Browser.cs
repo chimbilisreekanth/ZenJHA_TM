@@ -10,23 +10,39 @@ namespace Framework
 {
     public static class Browser
     {
+        public static string Excel_Path = @"C:\Users\schimbili\Documents\Visual Studio 2013\Projects\Framework-master\Framework-master\Framework\ExcelSheets\Sree.xlsx";
         public static string currentDate = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
-        //private static IWebDriver driver = new FirefoxDriver();
-        private static IWebDriver driver = new ChromeDriver();
+        //private static IWebDriver driver;
+        private static IWebDriver driver = GetDriver();
+        //private static IWebDriver driver = new ChromeDriver();
         private static string _BOUrl = "https://treasury-backoffice-e.qa.netteller.com";
         private static string _channelUrl = "https://treasury-channel-e.qa.netteller.com:8080";
-
+       
+          
         public static ISearchContext Driver
         {
             get { return driver; } 
+        }
+
+        public static IWebDriver GetDriver()
+        {
+            ExcelUtils Utils = new ExcelUtils();
+            Utils.PopulateInCollection(Excel_Path, "Sheet2");
+            string browser = Utils.ReadData(0, "Browser");
+
+            if (browser.ToLower() == "chrome")
+                driver = new ChromeDriver();
+            else if (browser.ToLower() == "firefox")
+                driver = new FirefoxDriver();
+            return driver;
+
         }
 
         public static string Title { get { return driver.Title; } }
 
         public static void Goto_BO(string url)
         {
-            ExcelUtils Utils = new ExcelUtils();
-            Utils.ExcelToDataTable(@"C:\Sree.xlsx");
+            
             //Goto URL
             driver.Navigate().GoToUrl(_BOUrl + url);
             driver.Manage().Window.Maximize();
@@ -36,9 +52,10 @@ namespace Framework
         }
         public static void Goto_CH(string url)
         {
-            ExcelUtils Utils = new ExcelUtils();
-            Utils.ExcelToDataTable(@"C:\Sree.xlsx");
-
+            //ExcelUtils Utils = new ExcelUtils();
+            //Utils.PopulateInCollection(Excel_Path);
+           // string resultent = Utils.ReadData(1, "CompanyId");
+           
             driver.Navigate().GoToUrl(_channelUrl + url);
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(70));
