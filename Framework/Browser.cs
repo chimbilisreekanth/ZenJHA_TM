@@ -27,7 +27,7 @@ namespace Framework
         public static IWebDriver GetDriver()
         {
             ExcelUtils Utils = new ExcelUtils();
-            Utils.PopulateInCollection(Excel_Path, "Sheet2");
+            Utils.PopulateInCollection(Excel_Path, "Sheet1");
             string browser = Utils.ReadData(0, "Browser");
 
             if (browser.ToLower() == "chrome")
